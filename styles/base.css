@@ -67,6 +67,7 @@ header span {
 .navigation ul {
 	list-style: none;
 	background-color: var(--primary-color);
+	color: black;
 	padding: 0;
 }
 
@@ -91,6 +92,7 @@ header span {
 /****************************** FOOTER ******************************/
 footer {
 	background-color: var(--primary-color);
+	color: black;
 	padding: 1rem 10px;
 	text-align: center;
 }
