@@ -1,4 +1,7 @@
-@media only screen and (min-width: 38rem)
+/* TODO: Finish desktop CSS
+   TODO: change main display to grid */
+
+@media only screen and (min-width: 1200px)
 {
 	header, main, nav, footer {
 		max-width: 900px;
