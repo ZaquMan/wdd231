@@ -13,15 +13,22 @@
 	<link rel="stylesheet" href="styles/base.css">
 	<link rel="stylesheet" href="styles/larger.css">
 
+	<!-- Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+
+	<!-- Scripts-->
 	<script src="scripts/index.js" defer></script>
 	<script src="scripts/navigation.js" defer></script>
+	<script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
 	<header>
-		<img src="images/wdd231-logo.svg" alt="Site Logo" width="24" height="24">
+		<img src="images/wdd231-logo-48.svg" alt="Site Logo" width="24" height="24">
 		<span>Zach's Homepage for WDD231</span>
-		<button id="ham-btn" class="hamburger"></button>
+		<button id="ham-btn" class="hamburger" aria-label="Hamburger Navigation Button"></button>
 	</header>
 	<nav id="nav-bar" class="navigation">
 		<ul>
@@ -31,7 +38,25 @@
 		</ul>
 	</nav>
 	<main>
-
+		<h1>Home</h1>
+		<section>
+			<h2>About Me</h2>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque provident rem totam numquam temporibus, cumque ipsum molestias tenetur repellat placeat, sint odio nesciunt quasi harum?</p>
+		</section>
+		<section>
+			<h2>Student Photo</h2>
+			<img src="images/profile-picture.webp" alt="A head shot of Zach Barnett">
+		</section>
+		<section id="certs">
+			<h2>Web Certificate Courses</h2>
+			<div id="certificate-btns">
+				<input type="button" id="all" value="All" class="active">
+				<input type="button" id="cse" value="CSE">
+				<input type="button" id="wdd" value="WDD">
+			</div>
+			<div id="certificate-list"></div>
+			<p>The total credits for the course(s) listed above is <span id="course-credits"></span></p>
+		</section>
 	</main>
 	<footer>
 		<div class="socials">
@@ -40,6 +65,8 @@
 			<a href="https://teams.microsoft.com/l/chat/0/0?users=zbarnett@byupathway.edu"><img
 					src="images/microsoft-teams.svg" alt="The Microsoft Teams Logo"></a>
 		</div>
+		<p>&copy; <span id="currentyear"></span> | Zach Barnett | California, US</p>
+		<p id="lastmodified"></p>
 	</footer>
 </body>
 

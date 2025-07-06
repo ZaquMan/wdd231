@@ -5,26 +5,27 @@
 */
 
 /*************************** SITE WIDE ***************************/
-:root{
+:root {
 	--primary-color: #B8E2C8;
 	--secondary-color: #B29BAA;
 	--accent-color: #244029;
+	--light-border: 1px solid #aaaaaa90;
 }
 
 * {
 	/* Universal rules */
-	font-family: "Josefin Sans", sans-serif;
+	font-family: "Bricolage Grotesque", sans-serif;
 	box-sizing: border-box;
 }
 
 /***************************** HEADER *****************************/
 header {
 	display: grid;
-	grid-template-columns: 24px auto 44px;
+	grid-template-columns: 36px auto 44px;
 	padding: 5px 0 5px 10px;
 	border-bottom: solid 1px #ddd;
 	column-gap: 8px;
-	align-items: end;
+	align-items: center;
 }
 
 header img {
@@ -37,6 +38,7 @@ header img {
 header span {
 	font-size: 1.2rem;
 	color: var(--accent-color);
+	font-weight: 500;
 }
 
 /********************** HAMBURGER NAVIGATION *********************/
@@ -74,11 +76,20 @@ header span {
 .navigation li {
 	font-size: 1.25rem;
 	padding: 5px 0 5px 5px;
+	border: 1px solid gray;
+}
+
+.navigation li:not(:first-child) {
+	border-top: none;
 }
 
 .navigation a {
 	text-decoration: none;
 	color: black;
+}
+
+.navigation a:hover {
+	border-bottom: 3px solid var(--accent-color);
 }
 
 .current {
@@ -89,9 +100,76 @@ header span {
 	color: #000;
 }
 
+/******************************* MAIN *******************************/
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	margin: 0 auto;
+}
+
+main h1 {
+	margin-bottom: 0;
+}
+
+main section {
+	border: var(--light-border);
+	border-radius: 5px;
+	margin: 0.5em 0;
+	background-color: var(--primary-color);
+	color: black;
+}
+
+main section h2 {
+	text-align: center;
+	background-color: var(--secondary-color);
+	color: black;
+	margin: 0;
+	padding: 1rem;
+	border-radius: 5px 5px 0 0;
+}
+
+main section p {
+	margin: 1rem;
+}
+
+main section img {
+	display: block;
+	margin: 1rem auto;
+	border: var(--light-border);
+	border-radius: 15px;
+}
+
+#certs {
+	text-align: center;
+	background-color: white;
+	border: none;
+}
+
+#certificate-btns {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#certificate-btns input {
+	margin: 0.25rem 0;
+	width: 30%;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#certificate-btns .active {
+	background-color: var(--accent-color);
+	color: white;
+}
+
+#certificate-btns input:hover {
+	background-color: var(--primary-color);
+}
+
 /****************************** FOOTER ******************************/
 footer {
-	background-color: var(--primary-color);
 	color: black;
 	padding: 1rem 10px;
 	text-align: center;
@@ -101,6 +179,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	column-gap: 8px;
+	margin-bottom: 1rem;
 }
 
 .socials a {
@@ -113,7 +192,18 @@ footer {
 	border-radius: 22px;
 }
 
+.socials a:hover {
+	border-color: var(--secondary-color);
+	box-shadow: 0 0 3px var(--accent-color);
+}
+
 .socials img {
 	width: 22px;
 	height: 22px;
+}
+
+footer p {
+	background-color: var(--primary-color);
+	margin: 0;
+	padding: 0.5rem;
 }
