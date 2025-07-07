@@ -74,7 +74,7 @@ header span {
 }
 
 .navigation li {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	padding: 5px 0 5px 5px;
 	border: 1px solid gray;
 }
@@ -163,6 +163,7 @@ main section img {
 	width: 100%;
 	border-radius: 10px;
 	background-color: var(--primary-color);
+	font-size: 2rem;
 }
 
 #certificate-btns .active {
