@@ -150,7 +150,6 @@ main section img {
 	border: none;
 }
 
-/* TODO: Make buttons bigger for mobile */
 #certificate-btns {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);	
@@ -186,7 +185,7 @@ main section img {
 	background-color: var(--primary-color);
 	border: var(--light-border);
 	padding: 5px;
-	border-radius: 3px;
+	border-radius: 7px;
 }
 
 #certificate-list .completed{
