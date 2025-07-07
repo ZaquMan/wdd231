@@ -3,15 +3,18 @@
 
 @media only screen and (min-width: 1200px)
 {
-	header, main, nav, footer {
-		max-width: 900px;
-		margin: 0 auto;
+
+	/************************* SITE WIDE *************************/
+	header, nav, footer {
+		margin: 0 1rem;
 	}
 
+	/*************************** HEADER ***************************/
 	header {
-		grid-template-columns: 24px auto;
+		grid-template-columns: 58px auto;
 	}
 
+	/******************** HAMBURGER NAVIGATION *******************/
 	.hamburger {
 		display: none;
 	}
@@ -25,5 +28,24 @@
 	}
 	.navigation li {
 		padding: 5px 10px;
+		border: none;
+
+	}
+
+	/***************************** MAIN *****************************/
+	main {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 1rem;
+	}
+
+	main h1,
+	#certs {
+		grid-column: 1/3;
+	}
+
+	#certificate-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
