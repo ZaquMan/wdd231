@@ -10,8 +10,8 @@
 
 	<!-- Style Sheets -->
 	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/directory.css">
-	<link rel="stylesheet" href="styles/directory-larger.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/larger.css">
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,13 +34,43 @@
 	</head>
 <body>
 	<header>
-		
+		<img src="images/oc-chambers-of-commerce-logo.svg" alt="A hand holding an orange overlaid with a bar graph" width="24px" height="24px">
+		<span>Orange County Chamber of Commerce</span>
+		<nav class="nav-bar">
+			<ul class="nav-links">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="directory.html" class="active">Directory</a></li>
+				<li><a href="join.html">Join</a></li>
+				<li><a href="discover.html">Discover</a></li>
+			</ul>
+		</nav>
+		<button id="darkmode-btn" class="dark-mode" aria-label="Dark Mode Button"></button>
+		<button id="ham-btn" class="hamburger" aria-label="Hamburger Navigation Button"></button>
 	</header>
 	<main>
-		
+		<div>
+			Filler Div
+		</div>
 	</main>
 	<footer>
-		
+		<div class="address">
+			<h4>Orange County Chamber of Commerce</h4>
+			<p>5257 Orange Ave</p>
+			<p>Cypress, CA 90630</p>
+			<a href="#">info@cypresscc.fake</a>
+			<p>(714) 555-8900</p>
+		</div>
+		<div class="social-links">
+			<a href="https://youtube.com"><img src="images/youtube.svg" alt="The YouTube logo"></a>
+			<a href="https://twitter.com"><img src="images/twitter-logo.svg" alt="The Twitter Logo (I'm still not saying X)"></a>
+			<a href="https://linkedin.com"><img src="images/linkedin.svg" alt="Linkedin Logo"></a>
+		</div>
+		<div class="page-info">
+			<p>WDD231 Class Project</p>
+			<p>Zach Barnett</p>
+			<p>&copy; <span id="currentyear"></span> Orange County Chamber of Commerce</p>
+			<p>Last Modification: <span id="lastmodified"></span></p>
+		</div>
 	</footer>
 </body>
 </html>

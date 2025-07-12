@@ -1,0 +1,115 @@
+/*************** Site Plan Design Brief ***************/
+/*
+	https://coolors.co/d6e3f8-fef5ef-ee9636
+	primary color: #EE9636 - Carrot Orange
+	secondary color: #D6E3F8 - Lavender (web)
+	background color: #FFFEFB - Baby Powder
+	text color: #001657
+	font family:
+*/
+
+/*************** Variables and Defaults ***************/
+:root {
+	--primary-color: #EE9636;
+	--secondary-color: #D6E3F8;
+	--background-color: #FFFEFB;
+}
+
+* {
+	color: #001657;
+	font-family: "Newsreader", 'Times New Roman', Times, serif;
+}
+
+/***************** Dark Mode Selector *****************/
+.dark-mode {
+	background: none;
+	border: none;
+	/* color: var(--secondary-color); */
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+.dark-mode::after {
+	content: '\25D0';
+}
+
+.dark-mode.show::after {
+	content: '\25D1';
+}
+
+/***************** HAMBURGER NAVIGATION ***************/
+.hamburger {
+	background: none;
+	border: none;
+	/* color: var(--secondary-color); */
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+.hamburger::after {
+	content: "\2630";
+}
+
+.hamburger.show::after {
+	content: "\00d7";
+}
+
+.nav-bar {
+	display: none;
+}
+
+.nav-bar.show {
+	display: block;
+}
+
+/*********************** HEADER ***********************/
+
+header {
+	background-color: var(--primary-color);
+	display: grid;
+	grid-template-columns: 36px 1fr 44px 44px;
+	padding: 5px;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+header img {
+	background-color: var(--background-color);
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+}
+
+header span {
+	font-weight: 600;
+	margin: 0 5px;
+}
+
+/*********************** Footer ***********************/
+footer {
+	background-color: var(--primary-color);
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+footer h4,
+footer p,
+footer a {
+	margin: 1px 0;
+	text-decoration: none;
+}
+
+.social-links {
+	display: grid;
+	grid-template-columns: 48px 48px 48px;
+	gap: 1rem;
+	align-self: center;
+}
+
+.social-links img {
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+}
