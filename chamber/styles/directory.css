@@ -1,0 +1,21 @@
+/*************** Site Plan Design Brief ***************/
+/*
+	https://coolors.co/d6e3f8-fef5ef-ee9636
+	primary color: #EE9636 - Carrot Orange
+	secondary color: #D6E3F8 - Lavender (web)
+	background color: #FFFEFB - Baby Powder
+	text color: #001657
+	font family:
+*/
+
+/*************** Variables and Defaults ***************/
+:root {
+	--primary-color: #EE9636;
+	--secondary-color: #D6E3F8;
+	--background-color: #FFFEFB;
+}
+
+* {
+	color: #001657;
+	font-family: "Newsreader", 'Times New Roman', Times, serif;
+}
