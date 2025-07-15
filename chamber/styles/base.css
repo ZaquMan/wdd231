@@ -20,9 +20,12 @@
 	font-family: "Newsreader", 'Times New Roman', Times, serif;
 }
 
-header, footer, main {
+header,
+footer,
+main {
 	padding: 0.5rem;
 }
+
 /*********************** HEADER ***********************/
 
 header {
@@ -90,7 +93,7 @@ header span {
 
 
 #mobile-nav {
-	display:none;
+	display: none;
 	border-top: 1px solid #aaa;
 	grid-column: 1/-1;
 }
@@ -124,7 +127,7 @@ header span {
 	background-color: var(--background-color);
 }
 
-.directory-page h2 {
+.directory-page h1 {
 	text-align: center;
 }
 
@@ -187,6 +190,7 @@ header span {
 	padding: 1rem;
 	box-shadow: 5px 5px 4px #999;
 	max-width: 400px;
+	align-self: center;
 }
 
 .member-card img {
@@ -207,6 +211,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	padding-left: 1rem;
 }
 
 footer h4,
@@ -220,7 +225,7 @@ footer a {
 	display: grid;
 	grid-template-columns: 48px 48px 48px;
 	gap: 1rem;
-	align-self: center;
+	/* align-self: center; */
 }
 
 .social-links img {

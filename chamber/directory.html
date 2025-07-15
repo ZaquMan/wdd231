@@ -31,17 +31,15 @@
 	<meta property="og:title" content="The Fake Cypress Chamber of Commerce">
 	<meta property="og:description"
 		content="Discover a mock-up of what businesses are in the Cypress area, if they were real.">
-	<!-- FIXME: Put the hero picture in once it's chosen -->
-	<meta property="og:image"
-		content="https://zaquman.github.io/wdd231/chamber/images/cypress-chambers-of-commerce-logo.svg">
+	<meta property="og:image" content="images/cypress-coc-logo.svg">
 	<meta property="og:url" content="https://zaquman.github.io/wdd231/chamber/directory.html">
 
 </head>
 
 <body>
 	<header>
-		<a href="home.html"><img src="images/cypress-chambers-of-commerce-logo.svg" alt="A hand holding an orange overlaid with a bar graph"
-			width="24px" height="24px"></a>
+		<a href="home.html"><img src="images/cypress-coc-logo.svg"
+				alt="A hand holding an orange overlaid with a bar graph"></a>
 		<span>Cypress Chamber of Commerce</span>
 		<nav class="nav-bar">
 			<ul class="nav-links">
@@ -57,12 +55,12 @@
 		<div id="mobile-nav"></div>
 	</header>
 	<main class="directory-page">
-		<h2>
+		<h1>
 			Directory of Member Businesses
-		</h2>
+		</h1>
 		<div id="directory-menu">
-			<button id="grid" class="active"></button>
-			<button id="list"></button>
+			<button id="grid" class="active" aria-label="Grid View"></button>
+			<button id="list" aria-label="List View"></button>
 		</div>
 		<div id="member-dir"></div>
 	</main>
@@ -87,4 +85,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>

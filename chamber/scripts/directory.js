@@ -46,6 +46,7 @@ function displayMembers(members, displayMode) {
 			memberLogo.setAttribute("alt", `${member.name}'s logo`);
 			memberLogo.setAttribute("width", "200");
 			memberLogo.setAttribute("height", "200");
+			memberLogo.setAttribute("loading", "lazy");
 			memberCard.appendChild(memberLogo);
 			const memberAddress = document.createElement("span");
 			memberAddress.textContent = member.address;

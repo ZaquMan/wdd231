@@ -2,7 +2,7 @@
 {
 	/*************** Variables and Defaults ***************/
 	header, main, footer {
-		padding: 5px 5rem;
+		padding: 1rem 5rem;
 	}
 
 	/*********************** HEADER ***********************/
