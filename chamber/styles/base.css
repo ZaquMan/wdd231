@@ -176,6 +176,7 @@ header span {
 
 .member-cards {
 	display: grid;
+	justify-content: center;
 }
 
 .member-card {
@@ -185,6 +186,7 @@ header span {
 	margin: 1rem;
 	padding: 1rem;
 	box-shadow: 5px 5px 4px #999;
+	max-width: 400px;
 }
 
 .member-card img {
