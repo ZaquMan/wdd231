@@ -20,6 +20,31 @@
 	font-family: "Newsreader", 'Times New Roman', Times, serif;
 }
 
+header, footer, main {
+	padding: 0.5rem;
+}
+/*********************** HEADER ***********************/
+
+header {
+	background-color: var(--primary-color);
+	display: grid;
+	grid-template-columns: 36px 1fr 44px 44px;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+header img {
+	background-color: var(--background-color);
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+}
+
+header span {
+	font-weight: 600;
+	margin: 0 5px;
+}
+
 /***************** Dark Mode Selector *****************/
 .dark-mode {
 	background: none;
@@ -27,6 +52,7 @@
 	/* color: var(--secondary-color); */
 	cursor: pointer;
 	font-size: 2rem;
+	height: 2rem;
 }
 
 .dark-mode::after {
@@ -34,7 +60,7 @@
 }
 
 .dark-mode.show::after {
-	content: '\25D1';
+	content: '\263C';
 }
 
 /***************** HAMBURGER NAVIGATION ***************/
@@ -62,33 +88,120 @@
 	display: block;
 }
 
-/*********************** HEADER ***********************/
 
-header {
-	background-color: var(--primary-color);
-	display: grid;
-	grid-template-columns: 36px 1fr 44px 44px;
-	padding: 5px;
-	padding-bottom: 10px;
-	align-items: center;
+#mobile-nav {
+	display:none;
+	border-top: 1px solid #aaa;
+	grid-column: 1/-1;
 }
 
-header img {
+#mobile-nav.show {
+	display: unset;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.nav-links a {
+	text-decoration: none;
+	padding: 15px 0;
+}
+
+.nav-links a:hover {
+	background-color: var(--secondary-color);
+}
+
+.nav-links .active {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+/****************** Main - Directory ******************/
+.directory-page {
 	background-color: var(--background-color);
-	border-radius: 5px;
-	width: 100%;
-	height: auto;
 }
 
-header span {
-	font-weight: 600;
-	margin: 0 5px;
+.directory-page h2 {
+	text-align: center;
+}
+
+#directory-menu {
+	display: flex;
+	justify-content: center;
+}
+
+#directory-menu button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 2rem;
+	margin: 2px;
+}
+
+#directory-menu button::after {
+	color: var(--primary-color);
+	padding: 2px;
+	border: 2px solid var(--background-color);
+}
+
+#directory-menu #grid::after {
+	content: '\1392 \1392 \1392';
+}
+
+#directory-menu #list::after {
+	/* content: '\22ee \2630'; */
+	content: '\2630';
+}
+
+#directory-menu .active::after {
+	border: 2px solid var(--primary-color);
+
+}
+
+.member-table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+.member-table td {
+	padding: 1rem 0.5rem;
+}
+
+.member-table tr:nth-child(even) {
+	background-color: var(--secondary-color);
+}
+
+.member-cards {
+	display: grid;
+}
+
+.member-card {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var(--secondary-color);
+	margin: 1rem;
+	padding: 1rem;
+	box-shadow: 5px 5px 4px #999;
+}
+
+.member-card img {
+	width: auto;
+	max-width: 200px;
+	height: auto;
+	max-height: 200px;
+	margin: 1rem auto;
+}
+
+.member-card span {
+	text-align: center;
 }
 
 /*********************** Footer ***********************/
 footer {
 	background-color: var(--primary-color);
-	padding: 5px;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;

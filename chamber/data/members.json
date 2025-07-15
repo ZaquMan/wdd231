@@ -4,7 +4,7 @@
 			"name": "Jump Around",
 			"address": "6405 Katella Ave, Cypress, CA 90630",
 			"phone": "285-819-5329",
-			"website": "jumparoundsocal.com",
+			"website": "https://www.jumparoundsocal.com",
 			"image": "jump-around-logo.webp",
 			"membership": 1
 		},
@@ -12,7 +12,7 @@
 			"name": "Flo's Fro-Yo",
 			"address": "9559 Valley View St, Cypress, CA 90630",
 			"phone": "718-755-3814",
-			"website": "flofroyo.com",
+			"website": "https://flofroyo.com",
 			"image": "flos-frozen-yogurt.webp",
 			"membership": 2
 		},
@@ -20,7 +20,7 @@
 			"name": "Cypress Castle Realtors",
 			"address": "4141 Ball Rd, Cypress, CA 90630",
 			"phone": "107-672-6205",
-			"website": "buycastlesoc.com",
+			"website": "https://buycastlesoc.com",
 			"image": "castle-realtors.webp",
 			"membership": 3
 		},
@@ -28,7 +28,7 @@
 			"name": "The Jockey Association - Cypress Chapter",
 			"address": "4941 Katella Ave, Cypress, CA 90630",
 			"phone": "225-339-5080",
-			"website": "jockeyassoc.com/locations/cypress",
+			"website": "http://jockeyassoc.com/locations/cypress",
 			"image": "jockey-association.webp",
 			"membership": 1
 		},
@@ -36,7 +36,7 @@
 			"name": "Jim's Crematorium and Funeral Services",
 			"address": "4471 Cypress Dr, Cypress, CA 90630",
 			"phone": "101-914-6571",
-			"website": "cremateatforestlawn.com",
+			"website": "https://cremateatforestlawn.com",
 			"image": "jims-crematorium.webp",
 			"membership": 1
 		},
@@ -44,7 +44,7 @@
 			"name": "Solar Imports and Exports",
 			"address": "6401 Orange Ave, Cypress, CA 90630",
 			"phone": "523-540-5817",
-			"website": "solarexporting.com",
+			"website": "https://solarexporting.com",
 			"image": "solar-exporters.webp",
 			"membership": 2
 		},
@@ -52,7 +52,7 @@
 			"name": "Industrial Mechas",
 			"address": "6431 Orange Ave, Cypress, CA 90630",
 			"phone": "368-623-7117",
-			"website": "mechasofindustry.com",
+			"website": "https://www.mechasofindustry.com",
 			"image": "industrial-mechas.webp",
 			"membership": 1
 		}

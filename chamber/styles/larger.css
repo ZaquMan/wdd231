@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1200px)
+{
+	/*************** Variables and Defaults ***************/
+	header, main, footer {
+		padding: 5px 5rem;
+	}
+
+	/*********************** HEADER ***********************/
+	header {
+		grid-template-columns: 36px 1fr 1fr 44px;
+		align-items: end;
+		padding-bottom: 1rem;
+	}
+
+	/***************** HAMBURGER NAVIGATION ***************/
+	.hamburger,#mobile-nav {
+		display: none;
+	}
+
+	.nav-bar {
+		display: initial;
+		justify-self: end;
+	}
+
+	.nav-links {
+		flex-direction: row;
+		align-self: flex-end;
+		margin: 0;
+		gap: 1rem;
+	}
+
+	.nav-links li {
+		list-style: none;
+		margin: 1rem 0 0 0;
+	}
+
+	.dark-mode::after {
+		align-self: stretch;
+	}
+
+	/****************** Main - Directory ******************/
+	.member-cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	/*********************** Footer ***********************/
+	footer {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
