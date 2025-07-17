@@ -191,6 +191,7 @@ header span {
 	box-shadow: 5px 5px 4px #999;
 	max-width: 400px;
 	align-self: center;
+	/* Try setting a fixed width to fix Lighthouse score */
 }
 
 .member-card img {
