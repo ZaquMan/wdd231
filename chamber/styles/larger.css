@@ -38,6 +38,11 @@
 		align-self: stretch;
 	}
 
+	/* Hide the hamburger menu if it's open before the screen gets resized */
+	.mobile-nav {
+		display: none;
+	}
+
 	/****************** Main - Directory ******************/
 	.member-cards {
 		grid-template-columns: 1fr 1fr 1fr;

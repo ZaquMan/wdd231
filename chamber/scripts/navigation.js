@@ -21,10 +21,14 @@ function makeNavList(parentElement) {
 	// Appends the nav list to an element
 	navDiv = document.createElement('div');
 	navDiv.classList.add("nav-links");
+	navDiv.classList.add("mobile-nav");
 	const links = ['Home', 'Directory', 'Join', 'Discover'];
 	links.forEach((link) => {
 		const aLink = document.createElement('a');
-		const linkPath = `${link.toLowerCase()}.html`
+		let  linkPath = `${link.toLowerCase()}.html`;
+		if (link === "Home") {
+			linkPath = "index.html";
+		}	
 		aLink.setAttribute('href', linkPath);
 		const currentPath = window.location.pathname;
 		if (linkPath === currentPath.substring(currentPath.lastIndexOf('/') + 1))
