@@ -43,6 +43,16 @@
 		display: none;
 	}
 
+	/********************* Main - Home ********************/
+	.current-events {
+		grid-template-columns: 2fr 1fr 1fr;
+
+	}
+
+	#spotlight {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
 	/****************** Main - Directory ******************/
 	.member-cards {
 		grid-template-columns: 1fr 1fr 1fr;

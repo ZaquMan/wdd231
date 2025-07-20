@@ -2,56 +2,70 @@
 	"businesses": [
 		{
 			"name": "Jump Around",
+			"tag": "",
 			"address": "6405 Katella Ave, Cypress, CA 90630",
 			"phone": "285-819-5329",
+			"email": "",
 			"website": "https://www.jumparoundsocal.com",
 			"image": "jump-around-logo.webp",
 			"membership": 1
 		},
 		{
 			"name": "Flo's Fro-Yo",
+			"tag": "The best frozen yogurt Cypress has to offer",
 			"address": "9559 Valley View St, Cypress, CA 90630",
 			"phone": "718-755-3814",
+			"email": "flo@flofroyo.com",
 			"website": "https://flofroyo.com",
 			"image": "flos-frozen-yogurt.webp",
 			"membership": 2
 		},
 		{
 			"name": "Cypress Castle Realtors",
+			"tag": "Find your dream Castle today",
 			"address": "4141 Ball Rd, Cypress, CA 90630",
 			"phone": "107-672-6205",
+			"email": "realtors@buycastlesoc.com",
 			"website": "https://buycastlesoc.com",
 			"image": "castle-realtors.webp",
 			"membership": 3
 		},
 		{
 			"name": "The Jockey Association - Cypress Chapter",
+			"tag": "",
 			"address": "4941 Katella Ave, Cypress, CA 90630",
 			"phone": "225-339-5080",
+			"email": "",
 			"website": "http://jockeyassoc.com/locations/cypress",
 			"image": "jockey-association.webp",
 			"membership": 1
 		},
 		{
 			"name": "Jim's Crematorium and Funeral Services",
+			"tag": "",
 			"address": "4471 Cypress Dr, Cypress, CA 90630",
 			"phone": "101-914-6571",
+			"email": "",
 			"website": "https://cremateatforestlawn.com",
 			"image": "jims-crematorium.webp",
 			"membership": 1
 		},
 		{
 			"name": "Solar Imports and Exports",
+			"tag": "Taking your business to the stars",
 			"address": "6401 Orange Ave, Cypress, CA 90630",
 			"phone": "523-540-5817",
+			"email": "sales@solarexporting.com",
 			"website": "https://solarexporting.com",
 			"image": "solar-exporters.webp",
 			"membership": 2
 		},
 		{
 			"name": "Industrial Mechas",
+			"tag": "",
 			"address": "6431 Orange Ave, Cypress, CA 90630",
 			"phone": "368-623-7117",
+			"email": "",
 			"website": "https://www.mechasofindustry.com",
 			"image": "industrial-mechas.webp",
 			"membership": 1
