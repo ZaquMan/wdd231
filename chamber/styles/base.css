@@ -26,6 +26,18 @@ main {
 	padding: 0.5rem;
 }
 
+a {
+	text-decoration: none;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 2rem;
+	height: 2rem;
+}
+
 /*********************** HEADER ***********************/
 
 header {
@@ -48,16 +60,8 @@ header span {
 	margin: 0 5px;
 }
 
-/***************** Dark Mode Selector *****************/
-.dark-mode {
-	background: none;
-	border: none;
-	/* color: var(--secondary-color); */
-	cursor: pointer;
-	font-size: 2rem;
-	height: 2rem;
-}
 
+/***************** Dark Mode Selector *****************/
 .dark-mode::after {
 	content: '\25D0';
 }
@@ -67,14 +71,6 @@ header span {
 }
 
 /***************** HAMBURGER NAVIGATION ***************/
-.hamburger {
-	background: none;
-	border: none;
-	/* color: var(--secondary-color); */
-	cursor: pointer;
-	font-size: 2rem;
-}
-
 .hamburger::after {
 	content: "\2630";
 }
@@ -109,7 +105,6 @@ header span {
 }
 
 .nav-links a {
-	text-decoration: none;
 	padding: 15px 0;
 }
 
@@ -120,6 +115,15 @@ header span {
 .nav-links .active {
 	text-decoration: underline;
 	text-underline-offset: 5px;
+}
+
+/******************** Main - Shared *******************/
+.card {
+	display: grid;
+	gap: 1rem;
+	margin: 1rem 0;
+	justify-content: center;
+
 }
 
 /********************* Main - Home ********************/
@@ -156,10 +160,8 @@ header span {
 	right: 5%;
 	background-color: var(--secondary-color);
 	border-radius: 20px;
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	border: 4px solid #00000000;
-	text-decoration: none;
 }
 
 #call-to-action:hover {
@@ -167,14 +169,8 @@ header span {
 	cursor: pointer;
 }
 
-.current-events, #spotlight {
-	display: grid;
-	gap: 1rem;
-	margin: 1rem 0;
-}
-
 .current-events section,
-#spotlight section {
+.member-cards section {
 	background-color: var(--secondary-color);
 }
 
@@ -182,17 +178,13 @@ header span {
 	background-color: var(--primary-color);
 	margin: 0;
 	padding: 0.5rem;
-
 }
 
-#events span,
-#weather span,
-#forecast span,
-#spotlight section span {
+main span {
 	font-weight: bold;
 }
 
-#events ul {
+ul {
 	list-style: none;
 	padding: 0.5rem;
 	margin: 0;
@@ -209,22 +201,22 @@ header span {
 	height: auto;
 }
 
-#spotlight section {
+.member-cards section {
 	border-radius: 20px;
 	padding: 0.5rem;
 }
 
-#spotlight section h3,
-#spotlight section h4 {
+.member-cards h3,
+.member-cards h4 {
 	text-align: center;
 	margin: 0;
 }
 
-#spotlight section h4 {
+.member-cards section h4 {
 	font-weight: 400;
 }
 
-#spotlight section img {
+.member-cards section img {
 	float: left;
 	max-width: 100px;
 	height: auto;
@@ -232,15 +224,7 @@ header span {
 	padding: 1rem;
 }
 
-#spotlight section a {
-	text-decoration: none;
-}
-
 /****************** Main - Directory ******************/
-.directory-page {
-	background-color: var(--background-color);
-}
-
 .directory-page h1 {
 	text-align: center;
 }
@@ -248,14 +232,6 @@ header span {
 #directory-menu {
 	display: flex;
 	justify-content: center;
-}
-
-#directory-menu button {
-	background: none;
-	border: none;
-	cursor: pointer;
-	font-size: 2rem;
-	margin: 2px;
 }
 
 #directory-menu button::after {
@@ -269,13 +245,11 @@ header span {
 }
 
 #directory-menu #list::after {
-	/* content: '\22ee \2630'; */
 	content: '\2630';
 }
 
 #directory-menu .active::after {
 	border: 2px solid var(--primary-color);
-
 }
 
 .member-table {
@@ -289,11 +263,6 @@ header span {
 
 .member-table tr:nth-child(even) {
 	background-color: var(--secondary-color);
-}
-
-.member-cards {
-	display: grid;
-	justify-content: center;
 }
 
 .member-card {

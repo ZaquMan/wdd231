@@ -45,6 +45,7 @@ export async function displayMembers(memberElement, displayMode) {
 	} else {
 		const memberCards = document.createElement("div");
 		memberCards.classList.add("member-cards");
+		memberCards.classList.add("card");
 		memberJson.forEach(member => {
 			const memberCard = document.createElement("div");
 			memberCard.classList.add("member-card");
