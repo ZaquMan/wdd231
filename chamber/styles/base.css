@@ -122,7 +122,6 @@ header span {
 	display: grid;
 	gap: 1rem;
 	margin: 1rem 0;
-	justify-content: center;
 
 }
 
@@ -274,6 +273,7 @@ ul {
 	box-shadow: 5px 5px 4px #999;
 	width: 300px;
 	align-self: center;
+	justify-self: center;
 	/* Try setting a fixed width to fix Lighthouse score */
 }
 

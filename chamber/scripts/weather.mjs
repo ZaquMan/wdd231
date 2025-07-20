@@ -65,15 +65,15 @@ export async function displayForecast(forecastElement) {
 	//Trim down to 3-day (1-day step) forecast instead of 5-day (3-hr step)
 	// Current day's forecast
 	const today = new Date();
-	const todayP = document.createElement("p");
+	const todayP = document.createElement("li");
 	const todayTemp = Math.round(forecastList[0].main.temp);
 	todayP.innerHTML = `Today: <span>${todayTemp}&deg;F`;
 	forecastElement.appendChild(todayP);
 	// Tomorrow's forecast
 	const tomorrow = today;
 	tomorrow.setDate(tomorrow.getDate() + 1);
-	const tomorrowStr = `${tomorrow.toLocaleDateString("en-CA")} 12:00:00`
-	const tomorrowP = document.createElement("p");
+	const tomorrowStr = `${tomorrow.toLocaleDateString("en-CA")} 21:00:00`
+	const tomorrowP = document.createElement("li");
 	const tomorrowForecast = forecastList.find(forecast => forecast.dt_txt === tomorrowStr);
 	const tomorrowTemp = Math.round(tomorrowForecast.main.temp);
 	tomorrowP.innerHTML = `${tomorrow.toLocaleDateString('en-US', { weekday: 'long' })}: <span>${tomorrowTemp}&deg;F`;
@@ -81,8 +81,8 @@ export async function displayForecast(forecastElement) {
 
 	const overmorrow = tomorrow;
 	overmorrow.setDate(overmorrow.getDate() + 1);
-	const overmorrowStr = `${overmorrow.toLocaleDateString("en-CA")} 12:00:00`
-	const overmorrowP = document.createElement("p");
+	const overmorrowStr = `${overmorrow.toLocaleDateString("en-CA")} 21:00:00`
+	const overmorrowP = document.createElement("li");
 	const overmorrowForecast = forecastList.find(forecast => forecast.dt_txt === overmorrowStr);
 	const overmorrowTemp = Math.round(overmorrowForecast.main.temp);
 	overmorrowP.innerHTML = `${overmorrow.toLocaleDateString('en-US', { weekday: 'long' })}: <span>${overmorrowTemp}&deg;F`;
