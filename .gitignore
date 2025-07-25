@@ -4,3 +4,5 @@
 # Ignore full-sized original image files
 */images/originals/
 images/originals/
+
+*.zip
