@@ -181,7 +181,7 @@ main section img {
 	margin: 0.5rem 0;
 }
 
-#certificate-list div {
+#certificate-list > * {
 	background-color: var(--primary-color);
 	border: var(--light-border);
 	padding: 5px;
@@ -195,6 +195,16 @@ main section img {
 #certificate-list .completed::before {
 	content: '✓';
 	font-weight: bold;
+}
+
+dialog {
+	text-align: left;
+	width: 66%;
+	max-width: 400px;
+}
+
+::backdrop {
+	background-color: #00000088;
 }
 
 /****************************** FOOTER ******************************/
