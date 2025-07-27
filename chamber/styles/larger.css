@@ -1,7 +1,9 @@
-@media only screen and (min-width: 1200px)
-{
+@media only screen and (min-width: 1200px) {
+
 	/*************** Variables and Defaults ***************/
-	header, main, footer {
+	header,
+	main,
+	footer {
 		padding: 1rem 5rem;
 	}
 
@@ -13,7 +15,8 @@
 	}
 
 	/***************** HAMBURGER NAVIGATION ***************/
-	.hamburger,#mobile-nav {
+	.hamburger,
+	#mobile-nav {
 		display: none;
 	}
 

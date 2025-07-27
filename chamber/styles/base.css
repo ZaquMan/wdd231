@@ -305,6 +305,7 @@ form label {
 	display: grid;
 	margin: 1rem 0;
 }
+
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"] {
@@ -315,7 +316,8 @@ fieldset {
 	display: flex;
 	position: relative;
 	justify-content: space-between;
-	border: none;;
+	border: none;
+	;
 }
 
 fieldset legend {
@@ -339,12 +341,12 @@ input[type="radio"] {
 	display: none;
 }
 
-input[type="radio"] + label {
+input[type="radio"]+label {
 	border: 3px solid var(--secondary-color);
 	border-radius: 15%;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"]:checked+label {
 	border: 3px solid var(--primary-color);
 	border-radius: 15%;
 	background-color: var(--secondary-color);
@@ -442,7 +444,7 @@ dialog p {
 	grid-template-columns: repeat(2, fit-content(150px));
 }
 
-.thankyou-page div.form div:first-child{
+.thankyou-page div.form div:first-child {
 	grid-column: 1/3;
 	font-weight: bold;
 	padding: 0.5rem 0;

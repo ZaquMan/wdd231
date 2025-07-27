@@ -10,7 +10,7 @@ const goldCard = document.querySelector("#gold-card");
 const memberLevelCards = [nonProfitCard, bronzeCard, silverCard, goldCard];
 
 memberLevelCards.forEach((memberCard) => {
-	const dialogId = memberCard.id.replace("card","modal");
+	const dialogId = memberCard.id.replace("card", "modal");
 	const dialog = document.querySelector(`#${dialogId}`);
 	memberCard.addEventListener("click", () => {
 		console.log(`Click registered for ${dialogId}`);

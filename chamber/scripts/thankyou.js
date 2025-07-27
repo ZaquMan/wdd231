@@ -40,7 +40,7 @@ function letterTemplateHTML(params) {
 	Cypress Chamber of Commerce`;
 	letter.appendChild(line3);
 
-	return letter;	
+	return letter;
 }
 
 function formTemplateHTML(params) {
@@ -60,7 +60,7 @@ function formTemplateHTML(params) {
 		valueDiv.classList.add('form-value');
 		if (key == "member-level") {
 			let value = params.get(key);
-			value = value.substring(0,1).toUpperCase() + value.substring(1);
+			value = value.substring(0, 1).toUpperCase() + value.substring(1);
 			valueDiv.textContent = value;
 		} else {
 			valueDiv.textContent = params.get(key);
