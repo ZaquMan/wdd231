@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WDD231 | Cypress Chamber of Commerce | Thank You</title>
+	<meta name="author" content="Zach Barnett">
+	<meta name="description" content="Thank you for submitting to join the fictitious Cypress Chamber of Commerce">
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/larger.css">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
+	<!-- Scripts -->
+	<script src="scripts/navigation.js" defer></script>
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/thankyou.js" defer></script>
+
+	<!-- Social Media Tags -->
+	<!-- Facebook -->
+	<meta property="og:title" content="The Fake Cypress Chamber of Commerce">
+	<meta property="og:description" content="Discover a mock-up of what businesses are in the Cypress area, if they were real.">
+	<meta property="og:image" content="https://zaquman.github.io/wdd231/chamber/images/cypress-coc-logo.webp">
+	<meta property="og:url" content="https://zaquman.github.io/wdd231/chamber/index.html">
+
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/cypress-coc-logo.svg" alt="A hand holding an orange overlaid with a bar graph"></a>
+		<span>Cypress Chamber of Commerce</span>
+		<nav class="nav-bar">
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="directory.html">Directory</a></li>
+				<li><a href="join.html">Join</a></li>
+				<li><a href="discover.html">Discover</a></li>
+			</ul>
+		</nav>
+		<button id="darkmode-btn" class="dark-mode" aria-label="Dark Mode Button"></button>
+		<button id="ham-btn" class="hamburger" aria-label="Hamburger Navigation Button"></button>
+		<!-- Links for navigation menu are placed here when hamburger icon is pressed. -->
+		<div id="mobile-nav"></div>
+	</header>
+	<main class="thankyou-page">
+		<h1>Thank You for Your Application</h1>
+		<div id="confirmation">
+		</div>
+	</main>
+	<footer>
+		<div class="address">
+			<h2>Cypress Chamber of Commerce</h2>
+			<p>5257 Orange Ave</p>
+			<p>Cypress, CA 90630</p>
+			<a href="#">info@cypresscc.fake</a>
+			<p>(714) 555-8900</p>
+		</div>
+		<div class="social-links">
+			<a href="https://youtube.com"><img src="images/youtube.svg" alt="The YouTube logo"></a>
+			<a href="https://twitter.com"><img src="images/twitter-logo.svg" alt="The Twitter Logo"></a>
+			<a href="https://linkedin.com"><img src="images/linkedin.svg" alt="Linkedin Logo"></a>
+		</div>
+		<div class="page-info">
+			<p>WDD231 Class Project</p>
+			<p>Zach Barnett</p>
+			<p>&copy; <span id="currentyear"></span> Cypress Chamber of Commerce</p>
+			<p>Last Modification: <span id="lastmodified"></span></p>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -58,6 +58,17 @@
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+	/********************* Main - Join ********************/
+	.join-page {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+	}
+
+	.join-page h1 {
+		grid-column: 1/3;
+	}
+
 	/*********************** Footer ***********************/
 	footer {
 		flex-direction: row;

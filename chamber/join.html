@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WDD231 | Cypress Chamber of Commerce | Join Us</title>
+	<meta name="author" content="Zach Barnett">
+	<meta name="description" content="Join the fictitious Cypress Chamber of Commerce">
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/larger.css">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+		rel="stylesheet">
+
+	<!-- Scripts -->
+	<script src="scripts/navigation.js" defer></script>
+	<script src="scripts/getdates.js" defer></script>
+	<script src="scripts/join.js" defer></script>
+
+	<!-- Social Media Tags -->
+	<!-- Facebook -->
+	<meta property="og:title" content="The Fake Cypress Chamber of Commerce">
+	<meta property="og:description"
+		content="Discover a mock-up of what businesses are in the Cypress area, if they were real.">
+	<meta property="og:image" content="https://zaquman.github.io/wdd231/chamber/images/cypress-coc-logo.webp">
+	<meta property="og:url" content="https://zaquman.github.io/wdd231/chamber/index.html">
+
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/cypress-coc-logo.svg"
+				alt="A hand holding an orange overlaid with a bar graph"></a>
+		<span>Cypress Chamber of Commerce</span>
+		<nav class="nav-bar">
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="directory.html">Directory</a></li>
+				<li><a href="join.html" class="active">Join</a></li>
+				<li><a href="discover.html">Discover</a></li>
+			</ul>
+		</nav>
+		<button id="darkmode-btn" class="dark-mode" aria-label="Dark Mode Button"></button>
+		<button id="ham-btn" class="hamburger" aria-label="Hamburger Navigation Button"></button>
+		<!-- Links for navigation menu are placed here when hamburger icon is pressed. -->
+		<div id="mobile-nav"></div>
+	</header>
+	<main class="join-page">
+		<h1>Join Us</h1>
+		<div class="form">
+			<h2>Membership Application Form</h2>
+			<form action="thankyou.html" method="get">
+				<p><span class="required">*</span> denotes a required field</p>
+				<label><span>First Name <span class="required">*</span></span><input type="text" name="first-name" id="first-name" title="Your First Name"
+						autocomplete="given-name" required></label>
+				<label><span>Last Name <span class="required">*</span></span><input type="text" name="last-name" id="last-name" title="Your Last Name"
+						autocomplete="family-name" required></label>
+				<label>Organization Title<input type="text" name="organization-title" id="organization-title"
+						title="Your Title at the Organization or Business" pattern="[a-zA-Z\- ]{7,}"
+						autocomplete="organization-title" required></label>
+				<label>Email<input type="email" name="email" id="email" title="Your Email Address" autocomplete="email"
+						placeholder="info@cypresscc.fake" required></label>
+				<label>Cell Phone<input type="tel" name="phone" id="phone" title="Your Cell Phone Number"
+						autocomplete="tel" required></label>
+				<label>Organization Name<input type="text" name="organization-name" id="organization-name"
+						title="The Name of Your Organization or Business" autocomplete="organization" required></label>
+				<fieldset>
+					<legend>Membership Level</legend>
+					<input type="radio" name="member-level" title="Non-Profit Membership Level" value="nonprofit" id="non-profit-radio">
+					 <label for="non-profit-radio"><img src="images/oc-coc-badge-non-profit.svg" alt="Non-Profit Membership Badge">Non-Profit</label>
+					<input type="radio" name="member-level" title="Bronze Membership Level" value="bronze" id="bronze-radio" checked>
+					 <label for="bronze-radio"><img src="images/oc-coc-badge-bronze.svg" alt="Bronze Membership Badge">Bronze</label>
+					<input type="radio" name="member-level" title="Silver Membership Level" value="silver" id="silver-radio">
+					 <label for="silver-radio"><img src="images/oc-coc-badge-silver.svg" alt="Silver Membership Badge">Silver</label>
+					<input type="radio" name="member-level" title="Gold Membership Level" value="gold" id="gold-radio">
+					 <label for="gold-radio"><img src="images/oc-coc-badge-gold.svg" alt="Gold Membership Badge">Gold</label>
+				</fieldset>
+				<label>Organization Description<textarea name="description" id="description"
+						title="Describe Your Organization or Business"></textarea></label>
+				<input type="text" name="timestamp" id="timestamp" hidden>
+				<button type="submit">Apply for Membership</button>
+			</form>
+		</div>
+		<div class="level-cards">
+			<h2>Membership Levels</h2>
+			<div class="level-card" id="non-profit-card">
+				<img src="images/oc-coc-badge-non-profit.svg" alt="Non-Profit Membership Badge">
+				<h3>Non-Profit Membership</h3>
+				<p>Click for more information</p>
+			</div>
+			<dialog id="non-profit-modal">
+				<h3>Non-Profit Membership<button></button></h3>
+				<p>Membership Cost: $0/month ($0/year)</p>
+				<p>Membership Benefits
+				</p>
+				<ul>
+					<li>Invitation to Member-only Events</li>
+					<li>1 Free Table (seats 8) at the Members-Only Gala<br>
+					Add'l tables: $100/table</li>
+					<li>Free Booth at Business Fairs</li>
+					<li>5 Free Passes to Seminars<br>
+					Add'l Passes: $25/pass</li>
+				</ul>
+			</dialog>
+			<div class="level-card" id="bronze-card">
+				<img src="images/oc-coc-badge-bronze.svg" alt="Bronze Membership Badge">
+				<h3>Bronze Membership</h3>
+				<p>Click for more information</p>
+			</div>
+			<dialog id="bronze-modal">
+				<h3>Bronze Membership<button></button></h3>
+				<p>Membership Cost: $15/month ($165/year)</p>
+				<p>Membership Benefits
+				</p>
+				<ul>
+					<li>Invitation to Member-only Events</li>
+					<li>1 Free Table (seats 8) at the Members-Only Gala<br>
+					Add'l tables: $100/table</li>
+					<li>Business Fair Booth: $10</li>
+					<li>3 Free Passes to Seminars<br>
+					Add'l Passes: $25/pass</li>
+				</ul>
+			</dialog>
+			<div class="level-card" id="silver-card">
+				<img src="images/oc-coc-badge-silver.svg" alt="Silver Membership Badge">
+				<h3>Silver Membership</h3>
+				<p>Click for more information</p>
+			</div>
+			<dialog id="silver-modal">
+				<h3>Silver Membership<button></button></h3>
+				<p>Membership Cost: $25/month ($250/year)</p>
+				<p>Membership Benefits
+				</p>
+				<ul>
+					<li>Invitation to Member-only Events</li>
+					<li>1 Free Table (seats 8) at the Members-Only Gala<br>
+					Add'l tables: $80/table</li>
+					<li>Business Fair Booth: $5</li>
+					<li>5 Free Passes to Seminars<br>
+					Add'l Passes: $25/pass</li>
+					<li>Business Spotlight on OC CoC webpage</li>
+				</ul>
+			</dialog>
+			<div class="level-card" id="gold-card">
+				<img src="images/oc-coc-badge-gold.svg" alt="Gold Membership Badge">
+				<h3>Gold Membership</h3>
+				<p>Click for more information</p>
+			</div>
+			<dialog id="gold-modal">
+				<h3>Gold Membership<button></button></h3>
+				<p>Membership Cost: $35/month ($350/year)</p>
+				<p>Membership Benefits
+				</p>
+				<ul>
+					<li>Invitation to Member-only Events</li>
+					<li>1 Free Table (seats 8) at the Members-Only Gala<br>
+					Add'l tables: $50/table</li>
+					<li>Free Booth at Business Fairs</li>
+					<li>5 Free Passes to Seminars<br>
+					Add'l Passes: $15/pass</li>
+					<li>Business Spotlight on OC CoC webpage</li>
+					<li>Public Mention at OC CoC-hosted Events</li>
+				</ul>
+			</dialog>
+		</div>
+	</main>
+	<footer>
+		<div class="address">
+			<h2>Cypress Chamber of Commerce</h2>
+			<p>5257 Orange Ave</p>
+			<p>Cypress, CA 90630</p>
+			<a href="#">info@cypresscc.fake</a>
+			<p>(714) 555-8900</p>
+		</div>
+		<div class="social-links">
+			<a href="https://youtube.com"><img src="images/youtube.svg" alt="The YouTube logo"></a>
+			<a href="https://twitter.com"><img src="images/twitter-logo.svg" alt="The Twitter Logo"></a>
+			<a href="https://linkedin.com"><img src="images/linkedin.svg" alt="Linkedin Logo"></a>
+		</div>
+		<div class="page-info">
+			<p>WDD231 Class Project</p>
+			<p>Zach Barnett</p>
+			<p>&copy; <span id="currentyear"></span> Cypress Chamber of Commerce</p>
+			<p>Last Modification: <span id="lastmodified"></span></p>
+		</div>
+	</footer>
+</body>
+
+</html>

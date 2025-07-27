@@ -203,6 +203,10 @@ dialog {
 	max-width: 400px;
 }
 
+.close-btn {
+	float: right;
+}
+
 ::backdrop {
 	background-color: #00000088;
 }
