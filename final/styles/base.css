@@ -1,0 +1,88 @@
+:root {
+	--primary-color: #BBD5ED;
+	--accent-color-1: #720026;
+	--accent-color-2: #A288E3;
+	--accent-color-3: #FF9B54;
+}
+
+* {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	color: var(--accent-color-1);
+}
+
+.primary-color {
+	--border-color: var(--primary-color);
+	--bg-color: #BBD5EDaa
+}
+
+.accent-color-1 {
+	--border-color: var(--accent-color-1);
+	--bg-color: #720026aa;
+}
+
+.accent-color-2 {
+	--border-color: var(--accent-color-2);
+	--bg-color: #A288E3aa;
+}
+
+.accent-color-3 {
+	--border-color: var(--accent-color-3);
+	--bg-color: #FF9B54aa;
+}
+
+.box {
+	border: 1px solid var(--border-color);
+	background-color: var(--bg-color);
+}
+
+
+main {
+	margin: 0 1rem;
+}
+
+/**********  HEADER  *********/
+
+header {
+	background-color: var(--primary-color);
+	display: grid;
+	grid-template-columns: 80px 2fr 1fr;
+	color: var(--accent-color-1);
+	padding: 0.5rem 1rem;
+}
+
+header h1 {
+	text-align: center;
+}
+
+header .nav-links {
+	align-self: end;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+header ul li {
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+
+header .nav-links a {
+	text-decoration: none;
+	color: var(--accent-color-1);
+}
+
+#site-logo {
+	max-width: 80px;
+}
+
+
+footer {
+	background-color: var(--primary-color);
+	padding: 1rem 2rem;
+}
