@@ -1,0 +1,72 @@
+[
+	{
+		"name": "Cypress College Swap Meet",
+		"address": "9200 Valley View St, Cypress, CA 90630",
+		"cost": "Free admission and parking",
+		"description": "Join us every weekend for an open-air market featuring antiques, crafts, food vendors, and more!",
+		"image": "cypress-swap-meet.webp"
+	},
+	{
+		"name": "Los Alamitos Race Course",
+		"address": "4961 Katella Ave, Cypress, CA 90720",
+		"cost": "General admission $3; seniors $2; premium seating ~$10",
+		"description": "Experience live horse racing—from quarter horses to thoroughbreds—at one of California's only tracks with multiple million-dollar stakes races.",
+		"image": "los-al-race-track.webp"
+	},
+	{
+		"name": "Seal Beach Navy Golf Course",
+		"address": "5660 Orangewood Ave, Cypress, CA 90630",
+		"cost": "$25-$80 green fee; $11 cart rental",
+		"description": "9-Hole Cruiser and 18-Hole Destroyer courses with novelty naval decor and ships on the fairways.",
+		"image": "navy-golf-course.webp"
+	},
+	{
+		"name": "Cypress College",
+		"address": "5660 Orangewood Ave, Cypress, CA 90630",
+		"cost": "Free public access",
+		"description": "Enjoy striking, space-age architecture along with art exhibitions, student theater and film festivals",
+		"image": "cypress-college.webp"
+	},
+	{
+		"name": "San Gabriel River Bike Trail",
+		"address": "Access via River's End Park, Seal Beach, CA 90740",
+		"cost": "Free public trail",
+		"description": "Ride along scenic trails from Cypress all the way down to Seal Beach. Ideal for biking, jogging, or a leisurely nature walk.",
+		"image": "san-gabriel-trail.webp"
+	},
+	{
+		"name": "Seal Beach & Pier",
+		"address": "Main St & Ocean Ave, Seal Beach, CA 90740",
+		"cost": "Free; parking ~$10/day",
+		"description": "Just 15 minutes away, this charming coastal town offers beach time, surfing lessons, a laid-back pier, historic architecture, and the nearby salt marsh nature reserve.",
+		"image": "seal-beach-pier.webp"
+	},
+	{
+		"name": "Knott's Berry Farm & Soak City",
+		"address": "8039 Beach Blvd, Buena Park, CA 90620",
+		"cost": "Knott's ~$62-69; Soak City ~$49-65",
+		"description": "Unleash thrills at Knott's Berry Farm amusement park or beat the heat with Soak City Water Park's wave pool and slides.",
+		"image": "knotts-berry-farm.webp"
+	},
+	{
+		"name": "St. Isidore Historical Plaza",
+		"address": "10961 Reagan St, Los Alamitos, CA 90720",
+		"cost": "Free entry; events ~$10-40",
+		"description": "This picturesque plaza features mission-revival architecture, evening food truck events, wine, and live community vibes under string lights.",
+		"image": "st-isidore-historical.webp"
+	},
+	{
+		"name": "Rancho Los Alamitos Historic Ranch & Gardens",
+		"address": "6400 E Bixby Hill Rd, Long Beach, CA 90815",
+		"cost": "Free admission and tours",
+		"description": "Historic ranch house, heritage gardens, farm animals, and interpretive tours—great for history buffs and families.",
+		"image": "rancho-los-al.webp"
+	},
+	{
+		"name": "Cypress Community Events & Festivals",
+		"address": "5275 Orange Ave, Cypress, CA 90630",
+		"cost": "Free or small entry fees ($5-20) depending on event",
+		"description": "Enjoy events like the Cypress Community Festival (summer), outdoor concerts, markets, and community sports.",
+		"image": "cypress-civic-center-concert.webp"
+	}
+]

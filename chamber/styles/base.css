@@ -458,6 +458,12 @@ dialog p {
 	font-weight: bold;
 }
 
+/****************** Main - Discover *******************/
+
+.discover-cards {
+	display: grid;
+}
+
 /*********************** Footer ***********************/
 footer {
 	background-color: var(--primary-color);
