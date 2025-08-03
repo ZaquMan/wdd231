@@ -8,4 +8,16 @@
 		"photograph description"
 		"photograph button";
 	}
+
+	.discover-cards div figure {
+		overflow: hidden;
+	}
+
+	.discover-cards div img {
+		transition: transform 1s;
+	}
+
+	.discover-cards div img:hover {
+		transform: scale(1.25);
+	}
 }

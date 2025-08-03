@@ -51,7 +51,7 @@ header {
 header img {
 	background-color: var(--background-color);
 	border-radius: 5px;
-	width: 100%;
+	/* width: 36px; */
 	height: auto;
 }
 
@@ -487,6 +487,11 @@ dialog p {
 	grid-area: photograph;
 }
 
+.discover-cards div img {
+	width: 300px;
+	height: auto;
+}
+
 .discover-cards div address {
 	margin: 0 8px;
 	grid-area: address;
@@ -520,8 +525,7 @@ dialog p {
 /*********************** Footer ***********************/
 footer {
 	background-color: var(--primary-color);
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	gap: 1rem;
 	padding-left: 1rem;
 }
