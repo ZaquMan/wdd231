@@ -1,0 +1,41 @@
+@media only screen and (min-width: 1024px) {
+	/********** Navigation *******/
+	.nav-links {
+		display: inherit;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	/********** Footer ***********/
+
+	footer {
+		display: grid;
+		grid-template-areas: 
+		"youtube copyright social"
+		"youtube modified social";
+		align-items: center;
+		text-align: center;
+	}
+
+	#youtube-link {
+		grid-area: youtube;
+	}
+
+	#copyright {
+		grid-area: copyright;
+		margin-bottom: 0.5rem;
+	}
+
+	#modified {
+		grid-area: modified;
+		margin-top: 0.5rem;
+	}
+
+	#social-links {
+		grid-area: social;
+		justify-content: center;
+	}
+
+}
