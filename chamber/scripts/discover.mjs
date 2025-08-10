@@ -16,7 +16,7 @@ function cardTemplate(place) {
 	const img = document.createElement('img');
 	img.setAttribute('src', `images/${place.image}`);
 	img.setAttribute('alt', `An image of the ${place.name}`);
-	// img.setAttribute('loading', 'lazy');
+	img.setAttribute('loading', 'lazy');
 	img.setAttribute('width', '300');
 	img.setAttribute('height', '200');
 	figure.appendChild(img);
