@@ -8,6 +8,20 @@
 		display: none;
 	}
 
+	/********** Main - Learn *****/
+	.learning-card {
+		grid-template-columns: 1fr 300px;
+	}
+
+	.learning-card img {
+		grid-row: 1 / 5;
+		grid-column: 2 / 3;
+	}
+
+	/********** Main - Play ******/
+
+	/********** Main - Challenge */
+
 	/********** Footer ***********/
 
 	footer {
