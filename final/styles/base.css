@@ -4,7 +4,12 @@
 	--primary-color: #BBD5ED;
 	--accent-color-1: #720026;
 	--accent-color-2: #A288E3;
+	--accent-color-2-transparent: #A288E388;
+
 	--accent-color-3: #FF9B54;
+	--accent-color-3-transparent: #FF9B5488;
+
+	--primary-color-darker: #90b8dd;
 }
 
 * {
@@ -166,14 +171,14 @@ header h1 {
 	margin: 0.5rem 0;
 	padding: 1rem;
 	border: 2px solid var(--accent-color-2);
-	background-color: #A288E388;
+	background-color: var(--accent-color-2-transparent);
 	display: grid;
 	align-items: center;
 }
 
 .learning-card:nth-child(odd) {
 	border-color: var(--accent-color-3);
-	background-color: #FF9B5488;
+	background-color: var(--accent-color-3-transparent);
 }
 
 .learning-card h2 {
@@ -218,8 +223,66 @@ header h1 {
 	}
 }
 
+dialog {
+	margin: auto 1rem ;
+	border: 3px solid var(--primary-color-darker);
+	background-color: #BBD5ED;
+}
+
+dialog button {
+	float: right;
+	color: var(--accent-color-1);
+	font-weight: bolder;
+	border: 1px solid var(--accent-color-1);
+	border-radius: 3px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
 /********** Main - Play ******/
 
+.play-page>div {
+	border: 2px solid var(--accent-color-2);
+	margin: 0.5rem 0;
+	padding: 0 1rem 1rem 1rem;
+}
+
+.play-page>div:nth-child(odd) {
+	border-color: var(--accent-color-3);
+}
+
+#three-obj-rps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#three-obj-rps h2 {
+	width: 100%;
+}
+
+#three-obj-rps p {
+	width: 100%;
+}
+
+#three-obj-rps div {
+	font-size: 3rem;
+	border: 3px solid #aaaaaa;
+	border-radius: 10px;
+	box-shadow: 0 0.25rem 0.1rem #aaa;
+}
+
+#three-obj-rps div.player {
+	border-color: blue;
+}
+
+#three-obj-rps div.computer {
+	border-color: red;
+}
+
+#three-obj-rps div.player.computer {
+	border-color: purple;
+}
 /********** Main - Challenge */
 
 

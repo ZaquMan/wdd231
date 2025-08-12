@@ -18,6 +18,10 @@
 		grid-column: 2 / 3;
 	}
 
+	dialog img {
+		float: right;
+	}
+
 	/********** Main - Play ******/
 
 	/********** Main - Challenge */
