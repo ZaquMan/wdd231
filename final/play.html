@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WDD231 ✊ I Throw Paper ✋ Site Plan ✌</title>
+	<meta name="author" content="Zach Barnett">
+	<meta name="description" content="I Throw Paper is a website dedicated to the game Rock, Paper, Scissors.">
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- Style Sheets and Fonts-->
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/large.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+		rel="stylesheet">
+
+	<!-- JavaScript -->
+	<script src="scripts/play.mjs" type="module"></script>
+	<script src="scripts/rps-3.mjs" type="module"></script>
+	<script src="scripts/nav.js" defer></script>
+
+	<!-- Social Media Meta Tags-->
+</head>
+
+<body>
+	<header>
+		<div>
+			<img id="site-logo" src="images/paper_over_rock.webp" alt="A piece of paper beats a rock">
+		</div>
+		<div>
+			<h1>I THROW PAPER</h1>
+		</div>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index.html">LEARN</a></li>
+				<li><a href="play.html" class="active">PLAY</a></li>
+				<li><a href="challenge.html">CHALLENGE</a></li>
+			</ul>
+		</div>
+		<button class="hamburger" aria-label="Hamburger Navigation Button"></button>
+	</header>
+	<nav class="ham-nav">
+		<a href="index.html" class="active">LEARN</a>
+		<a href="play.html">PLAY</a>
+		<a href="challenge.html">CHALLENGE</a>
+	</nav>
+	<main class="play-page">
+		<h1>Basic to Intermediate Play</h1>
+		<div id="three-obj-rps">
+			<h2>Standard Rock, Paper, Scissors</h2>
+			<p>Learn the basics of Rock, Paper, Scissors by playing against a computer. Select either rock, paper,
+				or scissors, and the computer will randomly choose one as well.  Remember: rock beats scissors,
+			scissors beat paper, and paper beats rock.</p>
+			<div id="threeObjRock">✊</div>
+			<div id="threeObjPaper">✋</div>
+			<div id="threeObjScissors">✌</div>
+		</div>
+		<div>
+			<h2>Variation - Korean Rock, Paper, Scissors</h2>
+			<p>It should come as no surprise that Rock, Paper, Scissors can be found in South Korea. In fact,
+				there are two variations, 가위 바위 보 (Gawi, Bawi, Bo) and 묵찌빠 (Muk, Jji, Ppa). More information
+				about 묵찌빠 can be found <a href="challenge.html/#muk-jji-ppa">here</a>.
+			</p>
+			<p>
+				In Korean 가위 바위 보, there are three main differences from the US version of Rock,
+				Paper, Scissors:
+			</p>
+			<ul>
+				<li>
+					<span class="highlight">Timing</span> - In the US, most people who play Rock, Paper, Scissors
+					throw their hand sign after chanting "Rock, paper, scissors", often accompanied by the word "Shoot."
+					In Korea, the hand sign is thrown as you say the last word of the chant, "Gawi, Bawi, Bo".
+				</li>
+				<li>
+					<span class="highlight">Scissors Sign</span> - Instead of using your index finger and middle finger
+					to make the two blades of scissors, Koreans use their thumb and index finger, in a gun shape, to
+					indicate
+					scissors.
+				</li>
+				<li>
+					<span class="highlight">Ties</span> - In Korean 가위 바위 보, there is no pause or repeat of the chant
+					in the event of a tie. Instead, signs are thrown at the same rhythm of the chant until someone wins.
+					Often, the last word of the chant, "Bo" is said with each thrown hand sign.
+				</li>
+			</ul>
+		</div>
+		<div id="11-obj-rps">
+			<h2>11-Object Rock, Paper, Scissors</h2>
+			<p>Getting bored of only having 3 hand signs to choose from? From the creative mind of David Lovelace, we
+				get
+				this variation of Rock, Paper, Scissors using 11 objects. Each object can beat 5 other objects, and is
+				beaten by 5 other objects. Hover over each object to see what it beats, and when you click one, the
+				computer will randomly select one as well.
+			</p>
+		</div>
+	</main>
+
+	<footer>
+		<p id="youtube-link">See the inner workings on <a href="https://youtube.com/#">Youtube</a></p>
+		<p id="copyright">&copy; <span id="currentYear"></span> | Zach Barnett - A WDD231 Final Project</p>
+		<p id="modified">Date Last Modified: <span id="lastModified"></span></p>
+		<div id="social-links">
+			<a href="https://github.com/ZaquMan"><img src="images/github.svg"
+					alt="The GitHub logo, linking to the site author's profile" width="48" height="48"></a>
+			<a href="https://linkedin.com/in/ZaquMan"><img src="images/linkedin.svg"
+					alt="The Linkedin logo, linking to the site author's profile" width="48" height="48"></a>
+			<a href="https://teams.microsoft.com/l/chat/0/0?users=zbarnett@byupathway.edu"><img
+					src="images/microsoft-teams.svg"
+					alt="The Microsoft Teams logo, for starting a chat with the site author" width="48" height="48"></a>
+		</div>
+	</footer>
+</body>
+
+</html>
