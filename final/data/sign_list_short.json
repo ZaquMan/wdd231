@@ -1,14 +1,114 @@
 {
-	"signs": [
-		"rock",
-		"fire",
-		"scissors",
-		"man",
-		"wolf",
-		"sponge",
-		"paper",
-		"water",
-		"devil",
-		"gun"
-	]
+	"signs": {
+		"rock": {
+			"beats": [
+				"fire",
+				"scissors",
+				"human",
+				"wolf",
+				"sponge"
+			],
+			"image": "images/hand_rock.webp"
+		},
+		"fire": {
+			"beats": [
+				"scissors",
+				"paper",
+				"human",
+				"wolf",
+				"sponge"
+			],
+			"image": "images/hand_fire.webp"
+		},
+		"scissors": {
+			"beats": [
+				"air",
+				"paper",
+				"human",
+				"wolf",
+				"sponge"
+			],
+			"image": "images/hand_scissors.webp"
+		},
+		"man": {
+			"beats": [
+				"wolf",
+				"sponge",
+				"paper",
+				"air",
+				"water"
+			],
+			"image": "images/hand_man.webp"
+		},
+		"wolf": {
+			"beats": [
+				"sponge",
+				"paper",
+				"air",
+				"water",
+				"devil"
+			],
+			"image": "images/hand_wolf.webp"
+		},
+		"sponge": {
+			"beats": [
+				"paper",
+				"air",
+				"water",
+				"devil",
+				"gun"
+			],
+			"image": "images/hand_sponge.webp"
+		},
+		"paper": {
+			"beats": [
+				"air",
+				"rock",
+				"water",
+				"devil",
+				"gun"
+			],
+			"image": "images/hand_paper.webp"
+		},
+		"air": {
+			"beats": [
+				"fire",
+				"rock",
+				"water",
+				"devil",
+				"gun"
+			],
+			"image": "images/hand_air.webp"
+		},
+		"water": {
+			"beats": [
+				"devil",
+				"rock",
+				"fire",
+				"scissors",
+				"gun"
+			],
+			"image": "images/hand_water.webp"
+		},
+		"devil": {
+			"beats": [
+				"rock",
+				"fire",
+				"scissors",
+				"gun",
+				"human"
+			],
+			"image": "images/hand_devil.webp"
+		},
+		"gun": {
+			"beats": [
+				"rock",
+				"fire",
+				"scissors",
+				"human",
+				"wolf"
+			],
+			"image": "images/hand_gun.webp"
+		}
+	}
 }
