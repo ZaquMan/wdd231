@@ -14,7 +14,7 @@ async function getSignsData() {
 		}
 	}
 	catch (error) {
-		console.log(error);
+		console.error(error);
 	}
 }
 
@@ -40,10 +40,8 @@ export async function createSigns(parentElement) {
 
 		card.addEventListener("click", async() => {
 			const playerSign = await makePlayerSelection(card);
-			console.log(`Player chose ${playerSign}`);
 			let computerSign = await selectRandomSign(getSignList("elevenObjCard"));
 			computerSign = computerSign.substring(9);
-			console.log(`Computer chose ${computerSign}`);
 			await determineOutcome(playerSign, computerSign);
 			winBox.showModal();
 			await sleep(10000);

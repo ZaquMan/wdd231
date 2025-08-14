@@ -12,7 +12,6 @@ threeObjRock.addEventListener("click", async() => {
 	setPlayerSign(threeObjOptions, threeObjRock);
 	computerSign = await selectRandomSign(threeObjOptions);
 	computerSign = computerSign.substring(8);
-	console.log(`Player chose rock\nComputer chose ${computerSign}`);
 	alert(compareSigns("rock", computerSign));
 });
 
@@ -20,7 +19,6 @@ threeObjPaper.addEventListener("click", async() => {
 	setPlayerSign(threeObjOptions, threeObjPaper);
 	computerSign = await selectRandomSign(threeObjOptions);
 	computerSign = computerSign.substring(8);
-	console.log(`Player chose paper\nComputer chose ${computerSign}`);
 	alert(compareSigns("paper", computerSign));
 });
 
@@ -28,7 +26,6 @@ threeObjScissors.addEventListener("click", async() => {
 	setPlayerSign(threeObjOptions, threeObjScissors);
 	computerSign = await selectRandomSign(threeObjOptions);
 	computerSign = computerSign.substring(8);
-	console.log(`Player chose scissors\nComputer chose ${computerSign}`);
 	alert(compareSigns("scissors", computerSign));
 });
 

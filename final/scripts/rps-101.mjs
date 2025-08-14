@@ -15,7 +15,7 @@ async function getJson(link) {
 			const data = await response.json();
 			return data;
 		} else {
-			console.log(await response.text());
+			console.error(await response.text());
 		}
 	}
 	catch (error) {
@@ -46,10 +46,8 @@ export async function drawRPSCards(parentElement) {
 
 		card.addEventListener("click", async () => {
 			const playerSign = await makePlayerSelection(card);
-			console.log(`Player chose ${playerSign}`);
 			let computerSign = await selectRandomSign(getSignList("hundredObjCard"));
 			computerSign = computerSign.substring(10);
-			console.log(`Computer chose ${computerSign}`);
 			await determineOutcome(playerSign, computerSign);
 			winBox.showModal();
 			await sleep(10000);
