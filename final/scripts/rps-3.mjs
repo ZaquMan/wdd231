@@ -16,6 +16,10 @@ export function compareSigns(sign1, sign2) {
 }
 
 export async function selectRandomSign(signList) {
+	for (let i = 0; i < signList.length; i++) {
+		signList[i].classList.remove("computer");
+	}
+
 	var selected_sign = signList[Math.floor(Math.random() * signList.length)];
 
 	for (let i = 0; i < 10; i++) {
