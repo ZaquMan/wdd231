@@ -24,6 +24,15 @@
 
 	/********** Main - Play ******/
 
+	#elevenObjParts .sign-card{
+		flex: 1 0 21%;
+		display: flex;
+	}
+
+	#elevenObjParts .sign-card img {
+		margin: 0 auto;
+	}
+
 	/********** Main - Challenge */
 
 	/********** Footer ***********/

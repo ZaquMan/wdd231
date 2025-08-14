@@ -7,9 +7,9 @@ export function compareSigns(sign1, sign2) {
 	}
 
 	if (valid_signs[sign1] === sign2) {
-		return `${sign1.toUpperCase()} WINS`;
+		return `${sign1.toUpperCase()} (PLAYER) WINS`;
 	} else if (valid_signs[sign2] === sign1) {
-		return `${sign2.toUpperCase()} WINS`;
+		return `${sign2.toUpperCase()} (COMPUTER) WINS`;
 	} else {
 		return `${sign1.toUpperCase()} AND ${sign2.toUpperCase()} TIE`;
 	}
@@ -25,11 +25,11 @@ export async function selectRandomSign(signList) {
 		sign.classList.remove("computer");
 	}
 	selected_sign.classList.add("computer");
-
-	return selected_sign.id.substring(8).toLowerCase();
+	await sleep(100);
+	return selected_sign.id.toLowerCase();
 }
 
-function sleep(ms) {
+export function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 

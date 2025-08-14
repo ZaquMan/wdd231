@@ -239,15 +239,21 @@ dialog button {
 	cursor: pointer;
 }
 
+dialog button::after {
+	content: "X";
+}
+
 /********** Main - Play ******/
 
-.play-page>div {
+.play-page>div,
+.challenge-page>div {
 	border: 2px solid var(--accent-color-2);
 	margin: 0.5rem 0;
 	padding: 0 1rem 1rem 1rem;
 }
 
-.play-page>div:nth-child(odd) {
+.play-page>div:nth-child(odd),
+.challenge-page>div:nth-child(odd) {
 	border-color: var(--accent-color-3);
 }
 
@@ -265,26 +271,102 @@ dialog button {
 	width: 100%;
 }
 
-#three-obj-rps div {
+.sign-card {
 	font-size: 3rem;
 	border: 3px solid #aaaaaa;
 	border-radius: 10px;
 	box-shadow: 0 0.25rem 0.1rem #aaa;
 }
 
-#three-obj-rps div.player {
-	border-color: blue;
-}
-
-#three-obj-rps div.computer {
+.sign-card.player {
 	border-color: red;
+	box-shadow: 0 0.25rem 0.1rem red;
 }
 
-#three-obj-rps div.player.computer {
+.sign-card.computer {
+	border-color: blue;
+	box-shadow: 0 0.25rem 0.1rem blue;
+}
+
+.sign-card.player.computer {
 	border-color: purple;
+	box-shadow: 0 0.25rem 0.1rem purple;
+}
+
+
+#elevenObjParts,
+#hundredObjParts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.sign-card {
+	position: relative;
+}
+
+#elevenObjParts .sign-card img {
+	width: 150px;
+	height: auto;
+}
+
+#hundredObjParts .sign-card img {
+	width: 75px;
+	height: auto;
+}
+
+.tooltip {
+	visibility: hidden;
+	font-size: 1rem;
+	width: 150px;
+	background-color: var(--accent-color-1);
+	color: var(--primary-color);
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	margin-left: -75px;
+}
+
+.tooltip::after {
+	content:"";
+	position: absolute;
+	bottom:100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent var(--accent-color-1)   transparent;
+}
+
+.sign-card:hover .tooltip {
+	visibility: visible;
+}
+
+#win-box {
+	margin: auto;
+	z-index: 1;
 }
 /********** Main - Challenge */
 
+#muk-jji-ppa {
+	overflow: hidden;
+	height: 10rem;
+	background: linear-gradient(to bottom, black, transparent);
+	color: transparent;
+	background-clip: text;
+}
+
+#muk-jji-ppa.show {
+	height: auto;
+	background: unset;
+	color: black;
+	background-clip: unset;
+}
 
 /********** Footer ***********/
 

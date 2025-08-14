@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WDD231 ✊ I Throw Paper ✋ Site Plan ✌</title>
+	<title>WDD231 ✊ I Throw Paper ✋ Play ✌</title>
 	<meta name="author" content="Zach Barnett">
 	<meta name="description" content="I Throw Paper is a website dedicated to the game Rock, Paper, Scissors.">
 	<link rel="icon" href="images/favicon.ico">
@@ -21,6 +21,7 @@
 	<!-- JavaScript -->
 	<script src="scripts/play.mjs" type="module"></script>
 	<script src="scripts/rps-3.mjs" type="module"></script>
+	<script src="scripts/rps-11.mjs" type="module"></script>
 	<script src="scripts/nav.js" defer></script>
 
 	<!-- Social Media Meta Tags-->
@@ -44,8 +45,8 @@
 		<button class="hamburger" aria-label="Hamburger Navigation Button"></button>
 	</header>
 	<nav class="ham-nav">
-		<a href="index.html" class="active">LEARN</a>
-		<a href="play.html">PLAY</a>
+		<a href="index.html">LEARN</a>
+		<a href="play.html" class="active">PLAY</a>
 		<a href="challenge.html">CHALLENGE</a>
 	</nav>
 	<main class="play-page">
@@ -53,17 +54,17 @@
 		<div id="three-obj-rps">
 			<h2>Standard Rock, Paper, Scissors</h2>
 			<p>Learn the basics of Rock, Paper, Scissors by playing against a computer. Select either rock, paper,
-				or scissors, and the computer will randomly choose one as well.  Remember: rock beats scissors,
-			scissors beat paper, and paper beats rock.</p>
-			<div id="threeObjRock">✊</div>
-			<div id="threeObjPaper">✋</div>
-			<div id="threeObjScissors">✌</div>
+				or scissors, and the computer will randomly choose one as well. Remember: rock beats scissors,
+				scissors beat paper, and paper beats rock.</p>
+			<div class="sign-card" id="threeObjRock">✊</div>
+			<div class="sign-card" id="threeObjPaper">✋</div>
+			<div class="sign-card" id="threeObjScissors">✌</div>
 		</div>
 		<div>
-			<h2>Variation - Korean Rock, Paper, Scissors</h2>
+			<h2 id="korean-rps">Variation - Korean Rock, Paper, Scissors</h2>
 			<p>It should come as no surprise that Rock, Paper, Scissors can be found in South Korea. In fact,
 				there are two variations, 가위 바위 보 (Gawi, Bawi, Bo) and 묵찌빠 (Muk, Jji, Ppa). More information
-				about 묵찌빠 can be found <a href="challenge.html/#muk-jji-ppa">here</a>.
+				about 묵찌빠 can be found on the <a href="challenge.html#muk-jji-ppa">Challenge page</a>.
 			</p>
 			<p>
 				In Korean 가위 바위 보, there are three main differences from the US version of Rock,
@@ -88,14 +89,15 @@
 				</li>
 			</ul>
 		</div>
-		<div id="11-obj-rps">
+		<div id="eleven-obj-rps">
 			<h2>11-Object Rock, Paper, Scissors</h2>
 			<p>Getting bored of only having 3 hand signs to choose from? From the creative mind of David Lovelace, we
-				get
-				this variation of Rock, Paper, Scissors using 11 objects. Each object can beat 5 other objects, and is
-				beaten by 5 other objects. Hover over each object to see what it beats, and when you click one, the
-				computer will randomly select one as well.
+				get this variation of Rock, Paper, Scissors using 11 objects. Each object can beat 5 other objects
+				and is beaten by 5 other objects. Hover over each object to see what it beats, and when you click one,
+				the computer will randomly select one as well.
 			</p>
+			<dialog id="win-box"></dialog>
+			<div id="elevenObjParts"></div>
 		</div>
 	</main>
 

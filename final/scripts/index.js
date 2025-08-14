@@ -31,9 +31,7 @@ function drawModal(jsonContent) {
 	const title = document.createElement("h2");
 	title.textContent = jsonContent.title;
 	
-
 	const closeBtn = document.createElement("button");
-	closeBtn.textContent = "X";
 	closeBtn.addEventListener("click", () => modalBox.close());
 	title.appendChild(closeBtn);
 
