@@ -356,6 +356,9 @@ dialog button::after {
 #muk-jji-ppa {
 	overflow: hidden;
 	height: 10rem;
+}
+
+#muk-jji-ppa p:nth-child(odd) {
 	background: linear-gradient(to bottom, black, transparent);
 	color: transparent;
 	background-clip: text;
@@ -363,9 +366,16 @@ dialog button::after {
 
 #muk-jji-ppa.show {
 	height: auto;
+}
+
+#muk-jji-ppa.show p{
 	background: unset;
 	color: black;
 	background-clip: unset;
+}
+
+#hundred-obj-rps {
+	background-color: white;
 }
 
 /********** Footer ***********/

@@ -54,7 +54,7 @@ export async function createSigns(parentElement) {
 	}
 }
 
-function getSignList(className) {
+export function getSignList(className) {
 	return document.getElementsByClassName(className);
 }
 
@@ -92,25 +92,25 @@ async function determineOutcome(playerSign, computerSign) {
 		title = "The Computer Wins!";
 		text = `${capitalize(computerSign)} beats ${playerSign}`;
 	}
-	modalBoxTemplate(title, text);
+	modalBoxTemplate(winBox, title, text);
 }
 
-function modalBoxTemplate(title, text) {
-	winBox.innerHTML = "";
+export function modalBoxTemplate(box, title, text) {
+	box.innerHTML = "";
 	const h2 = document.createElement("h2");
 	h2.textContent = title;
 
 	const closeBtn = document.createElement("button");
-	closeBtn.addEventListener("click", () => { winBox.close(); });
+	closeBtn.addEventListener("click", () => { box.close(); });
 	h2.appendChild(closeBtn);
-	winBox.appendChild(h2);
+	box.appendChild(h2);
 
 	const p = document.createElement("p");
 	p.textContent = text;
-	winBox.appendChild(p);
+	box.appendChild(p);
 }
 
-function createToolTip(sign, beats) {
+export function createToolTip(sign, beats) {
 	const tooltip = document.createElement("span");
 	tooltip.classList.add("tooltip");
 	let tipText = `${capitalize(sign)} beats`;
